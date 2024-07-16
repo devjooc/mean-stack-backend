@@ -1,0 +1,19 @@
+// to install typescript dependencies
+npm install --save-dev typescript @types/cors @types/express @types/node ts-node
+
+
+// to generate tsconfig.ts
+tsc --init
+
+// to use .env file that stores the DB url connection string
+npm install dotenv
+
+
+// to run the app
+npx ts-node .\server\src\server.ts
+
+// you can simply update the package.json file to add (in scripts)
+"start": "ts-node server/src/server.ts",
+
+// then to run the app
+npm start
